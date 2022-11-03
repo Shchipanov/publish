@@ -1074,6 +1074,8 @@ button,
   align-items: center;
   padding-top: 27px;
   padding-bottom: 27px;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .main-nav__logo:hover {
@@ -1751,6 +1753,8 @@ button,
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .form__input input {
@@ -1900,6 +1904,8 @@ button,
   -webkit-box-align: end;
   -ms-flex-align: end;
   align-items: flex-end;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .form__checkbox {

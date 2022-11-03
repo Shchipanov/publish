@@ -3,6 +3,7 @@
   align-items: center;
   padding-top: 27px;
   padding-bottom: 27px;
+  flex-wrap: wrap;
 
   @include vp-1023 {
     padding-top: 20px;

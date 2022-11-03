@@ -100,6 +100,7 @@
   margin: 0 0 20px;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 
   @include vp-767 {
     flex-direction: column;
@@ -200,6 +201,7 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+  flex-wrap: wrap;
 
   @include vp-767 {
     flex-direction: column;
