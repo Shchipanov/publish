@@ -32,6 +32,16 @@
   }
 }
 
+.features__item-row-1 p {
+  br {
+    display: none;
+  }
+
+  @include vp-1023 {
+    display: block;
+  }
+}
+
 .features__item-row-2 {
   @include vp-767 {
     padding-bottom: 56px;

@@ -2,7 +2,8 @@ import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {addText} from './modules/adding-text';
 import {viewportСhange} from './modules/viewport-change';
-import {getMaskPhone} from './modules/mask-phone';
+import {getMask} from './modules/get-mask';
+
 // ---------------------------------
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -21,13 +22,14 @@ window.addEventListener('DOMContentLoaded', () => {
     initModals();
     addText();
     viewportСhange();
-    getMaskPhone();
+    getMask();
   });
 
   window.addEventListener('resize', function () {
     viewportСhange();
   });
 });
+
 
 // ---------------------------------
 

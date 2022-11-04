@@ -15,7 +15,8 @@
   transform: scale(1.2);
   visibility: hidden;
   opacity: 0;
-  transition: opacity $trans-modal, transform $trans-modal, visibility $trans-modal;
+  transition: opacity $trans-modal, transform $trans-modal,
+    visibility $trans-modal;
   pointer-events: none;
 
   -ms-overflow-style: none;
@@ -36,7 +37,6 @@
     min-height: 100%;
     padding: 60px 40px;
     margin-left: -8px;
-    margin-top: -130px;
 
     @include vp-767 {
       padding: 60px 16px;
@@ -209,9 +209,15 @@
   }
 }
 
+.modal__question {
+  display: flex;
+  flex-direction: column;
+}
+
 .modal__checkbox {
   position: relative;
   margin-left: 8px;
+  order: 1;
 }
 
 .modal__btn {
@@ -284,7 +290,8 @@
   }
 }
 
-.modal__checkbox-input[type="checkbox"]:checked:active + .modal__control-mark::before {
+.modal__checkbox-input[type="checkbox"]:checked:active
+  + .modal__control-mark::before {
   background-color: $color-silver;
 }
 

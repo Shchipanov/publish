@@ -7,6 +7,14 @@
   background-size: cover;
   z-index: 0;
 
+  @include vp-1023 {
+    margin-top: -103px;
+  }
+
+  @include vp-767 {
+    margin-top: -73px;
+  }
+
   @media (min-width: $vp-1024) {
     @include retina {
       background-image: url("../img/background/main-container-image@2x.jpg");

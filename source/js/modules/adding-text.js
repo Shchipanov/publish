@@ -26,5 +26,4 @@ function addText() {
 
 }
 
-
 export {addText};
