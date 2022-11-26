@@ -272,6 +272,7 @@
   color: $color-default-white;
   opacity: 0.8;
   margin: 0 0 0 25px;
+  cursor: pointer;
 }
 
 .form__checkbox-input[type="checkbox"]:checked + .form__control-mark::before {
@@ -309,8 +310,7 @@
   }
 }
 
-.form__checkbox-input[type="checkbox"]:checked:active
-  + .form__control-mark::before {
+.form__checkbox-input[type="checkbox"]:checked:active + .form__control-mark::before {
   background-color: $color-silver;
 }
 
