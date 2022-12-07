@@ -1,0 +1,65 @@
+.swiper-btn-prev,
+.swiper-btn-next {
+  border: none;
+  background-color: inherit;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  padding: 10px;
+  width: 16px;
+  height: 32px;
+  position: absolute;
+  top: 64%;
+  transform: translateY(-50%);
+  z-index: 1;
+  cursor: pointer;
+
+  @include vp-1199 {
+    top: 62%;
+  }
+
+  @include vp-767 {
+    width: 10px;
+    height: 19px;
+    top: 61%;
+  }
+}
+
+.swiper-btn-next {
+  right: -5%;
+  background-image: url("../img/svg/arrow.svg");
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-image: url("../img/svg/arrow-activ.svg");
+  }
+
+  @include vp-1199 {
+    right: -10%;
+  }
+
+  @include vp-767 {
+    right: -35px;
+  }
+}
+
+.swiper-btn-prev {
+  left: -5%;
+
+  background-image: url("../img/svg/arrow-prev.svg");
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-image: url("../img/svg/arrow-prev-activ.svg");
+  }
+
+  @include vp-1199 {
+    left: -10%;
+  }
+
+  @include vp-767 {
+    left: -35px;
+  }
+}

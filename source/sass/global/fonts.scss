@@ -1,54 +1,72 @@
-// @font-face {
-//   font-style: normal;
-//   font-weight: 400;
-//   font-family: "Rouble";
-
-//   font-display: swap;
-//   src:
-//     url("../fonts/rouble.woff2") format("woff2"),
-//     url("../fonts/rouble.woff") format("woff");
-// }
-
 @font-face {
   font-style: normal;
   font-weight: 400;
-  font-family: "roboto-condensed";
+  font-family: "Rouble";
 
   font-display: swap;
-  src:
-    url("../fonts/roboto-condensed-regular.woff2") format("woff2"),
-    url("../fonts/roboto-condensed-regular.woff") format("woff");
+  src: url("../fonts/rouble.woff2") format("woff2"),
+    url("../fonts/rouble.woff") format("woff");
 }
 
 @font-face {
+  font-family: "Roboto Condensed";
+  src: url("../fonts/Robotocondensed-regular.woff2") format("woff2"),
+    url("../fonts/Robotocondensed-regular.woff") format("woff");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto Condensed";
+  src: url("../fonts/Robotocondensed-light.woff2") format("woff2"),
+    url("../fonts/Robotocondensed-light.woff") format("woff");
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto Condensed";
+  src: url("../fonts/Robotocondensed-bold.woff2") format("woff2"),
+    url("../fonts/Robotocondensed-bold.woff") format("woff");
   font-style: normal;
   font-weight: 700;
-  font-family: "roboto-condensed";
-
   font-display: swap;
-  src:
-    url("../fonts/roboto-condensed-bold.woff2") format("woff2"),
-    url("../fonts/roboto-condensed-bold.woff") format("woff");
 }
 
 @font-face {
+  font-family: "Alumni Sans";
+  src: url("../fonts/Alumnisans-semibold.woff2") format("woff2"),
+    url("../fonts/Alumnisans-semibold.woff") format("woff");
   font-style: normal;
-  font-weight: 500;
-  font-family: "roboto";
-
+  font-weight: 600;
   font-display: swap;
-  src:
-    url("../fonts/roboto-medium.woff2") format("woff2"),
-    url("../fonts/roboto-medium.woff") format("woff");
 }
 
 @font-face {
+  font-family: "Alumni Sans";
+  src: url("../fonts/Alumnisans-bold.woff2") format("woff2"),
+    url("../fonts/Alumnisans-bold.woff") format("woff");
   font-style: normal;
-  font-weight: 400;
-  font-family: "pt-mono";
-
+  font-weight: bold;
   font-display: swap;
-  src:
-    url("../fonts/pt-mono-regular.woff2") format("woff2"),
-    url("../fonts/pt-mono-regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Alumni Sans";
+  src: url("../fonts/Alumnisans-black.woff2") format("woff2"),
+    url("../fonts/Alumnisans-black.woff") format("woff");
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Alumni Sans";
+  src: url("../fonts/Alumnisans-extrabold.woff2") format("woff2"),
+    url("../fonts/Alumnisans-extrabold.woff") format("woff");
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
 }

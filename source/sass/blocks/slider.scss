@@ -1,0 +1,13 @@
+.slider__button-prev,
+.slider__button-next {
+  border: none;
+  background-color: inherit;
+  background-image: url("../img/svg/arrow.svg");
+  background-repeat: no-repeat;
+  width: 16px;
+  height: 32px;
+}
+
+.slider__button-next {
+  transform: rotate(180deg);
+}

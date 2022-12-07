@@ -659,7 +659,6 @@ button,
   -webkit-transition: opacity 0.3s ease;
   -o-transition: opacity 0.3s ease;
   transition: opacity 0.3s ease;
-  -webkit-touch-callout: none;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -1019,6 +1018,7 @@ button,
   color: #ffffff;
   opacity: 0.8;
   margin: 0 0 0 25px;
+  cursor: pointer;
 }
 
 .modal__checkbox-input[type=checkbox]:checked + .modal__control-mark::before {
@@ -1040,6 +1040,7 @@ button,
   border-radius: 2px;
   top: 2px;
   left: 0;
+  cursor: pointer;
 }
 
 .modal__control-mark:hover {
@@ -1980,6 +1981,7 @@ button,
   color: #ffffff;
   opacity: 0.8;
   margin: 0 0 0 25px;
+  cursor: pointer;
 }
 
 .form__checkbox-input[type=checkbox]:checked + .form__control-mark::before {

@@ -1,8 +1,10 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
-import {addText} from './modules/adding-text';
-import {viewportСhange} from './modules/viewport-change';
-import {getMask} from './modules/get-mask';
+import {sliderCoaches, sliderFeedback} from './modules/slider';
+import {video} from './modules/video/video';
+import {tabs} from './modules/tabs/tabs';
+import {validityForm, sendUserFormData, contactsForm, inputPhoneContacts, inputNameContacts} from './modules/validate/validate';
+
 
 // ---------------------------------
 
@@ -20,16 +22,14 @@ window.addEventListener('DOMContentLoaded', () => {
   // в load следует добавить скрипты, не участвующие в работе первого экрана
   window.addEventListener('load', () => {
     initModals();
-    addText();
-    viewportСhange();
-    getMask();
-  });
-
-  window.addEventListener('resize', function () {
-    viewportСhange();
+    sliderCoaches();
+    sliderFeedback();
+    video();
+    tabs();
+    validityForm(inputPhoneContacts, inputNameContacts);
+    sendUserFormData(contactsForm);
   });
 });
-
 
 // ---------------------------------
 

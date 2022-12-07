@@ -1,0 +1,9 @@
+.main__order {
+  display: flex;
+  width: 100%;
+
+  @include vp-1199 {
+    flex-direction: column;
+    width: auto;
+  }
+}

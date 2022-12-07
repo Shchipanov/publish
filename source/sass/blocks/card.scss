@@ -1,0 +1,186 @@
+.card {
+  padding: 68px 10px;
+  padding-top: 55px;
+  padding-bottom: 60px;
+  background-color: $color-default-white;
+  display: flex;
+  flex-direction: column;
+  border: 7px solid transparent;
+  align-items: center;
+
+  &--active {
+    border: 7px solid;
+    border-image-source: linear-gradient(
+      148.82deg,
+      #d10a42 0.85%,
+      #00359f 100%
+    );
+    border-image-slice: 1;
+  }
+
+  @include vp-1199 {
+    padding-top: 57px;
+  }
+
+  @include vp-767 {
+    padding: 55px 10px;
+    padding-top: 43px;
+    padding-bottom: 47px;
+  }
+}
+
+.card:hover,
+.card:focus,
+.card:active {
+  border: 7px solid;
+  border-image-source: linear-gradient(148.82deg, #d10a42 0.85%, #00359f 100%);
+  border-image-slice: 1;
+}
+
+.card h4 {
+  margin: 0;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 29px;
+  color: $color-sapphire;
+  margin-bottom: 11px;
+
+  @include vp-1199 {
+    margin-bottom: 10px;
+  }
+
+  @include vp-767 {
+    font-size: 22px;
+    line-height: 110.16%;
+    margin-bottom: 8px;
+  }
+}
+
+.card span {
+  margin: 0;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: $color-chambray;
+  margin-bottom: 67px;
+
+  @include vp-1199 {
+    margin-bottom: 76px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 58px;
+  }
+}
+
+.card__price span {
+  font-family: "Rouble", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 150%;
+  color: $color-sapphire;
+
+  @include vp-767 {
+    font-size: 40px;
+  }
+}
+
+.card__price {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 1.5;
+  color: $color-egyptianBlue;
+  margin: 0;
+  margin-top: -32px;
+  z-index: 2;
+  margin-left: 10px;
+
+  @include vp-1199 {
+    margin: -40px 0 0 15px;
+  }
+
+  @include vp-767 {
+    font-size: 48px;
+    margin: -28px 0 0 7px;
+  }
+}
+
+.card a {
+  padding: 27px 10px;
+  padding-bottom: 23px;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: $color-sapphire;
+  border: 2px solid $color-sapphire;
+  width: 63%;
+  text-align: center;
+  margin-left: 0;
+
+  &:hover {
+    background: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
+    color: $color-default-white;
+  }
+
+  &:active {
+    background: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
+    color: $color-default-white;
+  }
+
+  &:focus {
+    background: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
+    color: $color-default-white;
+  }
+
+  @include vp-1199 {
+    width: 50%;
+    margin-left: 4px;
+    padding-bottom: 22px;
+  }
+
+  @include vp-767 {
+    justify-self: flex-start;
+    width: 81%;
+    padding-top: 26px;
+    padding-bottom: 23px;
+    margin-left: 0;
+  }
+}
+
+.card__price-shadow {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 100px;
+  color: $color-whisper;
+  opacity: 0.48;
+  margin: 0;
+
+  @include vp-767 {
+    font-size: 80px;
+  }
+}
+
+.card div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 32px;
+
+  @include vp-767 {
+    margin-left: 0;
+    margin-bottom: 29px;
+    max-width: 100%;
+  }
+}
