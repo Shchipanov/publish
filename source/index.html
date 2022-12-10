@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Supergym – самый большой фитнес центр за Уралом и идеальное место для укрепления тела и здоровья.">
+    <title>Фитнес центр</title>
+    <link rel="stylesheet" href="css/style.min.css">
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="main-header">
+        <nav class="main-nav container">
+          <div class="main-nav__top">
+            <div class="main-nav__logo logo">
+              <svg class="logo__image" width="119" height="23" viewBox="0 0 119 23">
+                <use xlink:href="./img/sprite.svg#logo"></use>
+              </svg>
+            </div>
+            <div class="main-nav__phone">
+              <a href="tel:+88005555555">8-800-555-55-55</a>
+            </div>
+          </div>
+
+          <div class="main-nav__description nav-description">
+            <div class="nav-description__wrapper">
+              <p class="nav-description__city">омск</p>
+              <div class="nav-description__block">
+                <h1 class="nav-description__title">Фитнес центр</h1>
+                <ul class="nav-description__list">
+                  <li class="nav-description__item">
+                    <a href="#gum">Тренажёрный зал</a>
+                  </li>
+                  <li class="nav-description__item">
+                    <a href="#">Групповые занятия</a>
+                  </li>
+                  <li class="nav-description__item">
+                    <a href="#">Кардио-зона</a>
+                  </li>
+                </ul>
+              </div>
+              <a class="nav-description__btn btn" href="#subscriptions">Купить абонемент</a>
+            </div>
+            <div class="main-nav__image">
+              <picture>
+                <source type="image/webp" srcset=" img/main-block.webp 1x, img/main-block@2x.webp 2x">
+                <img alt="Молодой человек в футболке Супермена." width="500" height="556" src="img/main-block.jpg" srcset="img/main-block@2x.jpx 2x">
+              </picture>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+      <main class="main">
+        <section class="gum" id="gum">
+          <div class="gum__container container">
+            <div class="gum__description">
+              <h2>Тренажерный зал</h2>
+              <h3>Просторный зал площадью 900&nbsp;кв/м</h3>
+              <p>Supergym&nbsp;&mdash; самый большой фитнес центр за&nbsp;Уралом
+                и&nbsp;идеальное место для укрепления тела и&nbsp;здоровья. Тренажерный зал оснащен всем необходимым
+                современным оборудованием для всех спортсменов.</p>
+              <p>В&nbsp;зале расположены отдельная зона для
+                Crossfit и&nbsp;кардио-зона с&nbsp;40&nbsp;тренажерами. Также в&nbsp;фитнес центре есть несколько
+                оборудованных залов для различных видов групповых занятий.</p>
+            </div>
+            <div class="gum__image">
+              <picture>
+                <source type="image/webp" srcset=" img/gum.webp 1x, img/gum@2x.webp 2x">
+                <img alt="Тренажёрный зал." width="660" height="401" src="img/gum.jpg" srcset="img/gum@2x.jpg 2x">
+              </picture>
+            </div>
+            <div class="gum__video" data-video>
+              <div class="gum__video-background">
+                <picture>
+                  <source type="image/webp" srcset="img/poster.               webp 1x, img/poster@2x.webp 2x">
+                  <img class="gum__video-poster" src="img/poster.               jpg" srcset="img/poster@2x.jpg 2x" alt="Видео -               тренажерный зал." width="364" height="228">
+                </picture>
+                <a class="gum__video-btn" href="https://www.youtube.com/watch?v=9TZXsZItgdw" data-video-btn>
+                  <span class="visually-hidden">Воспроизвести видео.</span>
+                </a>
+              </div>
+              <div class="gum__video-player" id="player" data-video-player></div>
+            </div>
+          </div>
+        </section>
+
+        <section class="subscriptions" id="subscriptions">
+          <div class="subscriptions__container container">
+            <h2>Абонементы</h2>
+            <div class="subscriptions__tabs tabs">
+              <ul class="subscriptions__list tabs__list">
+                <li class="tabs__item tabs__item--active" data-tab-control="month" tabindex="0"><a>1 месяц</a></li>
+                <li class="tabs__item" data-tab-control="half-year" tabindex="0"><a>6 месяцев</a></li>
+                <li class="tabs__item" data-tab-control="year" tabindex="0"><a>12 месяцев</a></li>
+              </ul>
+            </div>
+            <div class="subscriptions__wrapper">
+              <ul class="subscriptions__sublist subscriptions__sublist--active" data-tab-content="month">
+                <li class="subscriptions__subitem card" tabindex="0">
+                  <h3>С тренером</h3>
+                  <span>12 занятий</span>
+                  <div class="card__price">
+                    <p class="card__price-shadow">5000</p>
+                    <p class="card__price-cash">5000 <span>&#8381;</span></p>
+                  </div>
+                  <a href="#">купить абонемент</a>
+                </li>
+                <li class="subscriptions__subitem card" tabindex="0">
+                  <h3>Дневной</h3>
+                  <span>с 8:00 до 17:00</span>
+                  <div class="card__price">
+                    <p class="card__price-shadow">1700</p>
+                    <p class="card__price-cash">1700 <span>&#8381;</span></p>
+                  </div>
+                  <a href="#">купить абонемент</a>
+                </li>
+                <li class="subscriptions__subitem card" tabindex="0">
+                  <h3>Полный день</h3>
+                  <span>с 8:00 до 22:00 </span>
+                  <div class="card__price">
+                    <p class="card__price-shadow">2700</p>
+                    <p class="card__price-cash">2700 <span>&#8381;</span></p>
+                  </div>
+                  <a href="#">купить абонемент</a>
+                </li>
+              </ul>
+              <ul class="subscriptions__sublist" data-tab-content="half-year">
+                <li class="subscriptions__subitem card" tabindex="0">
+                  <h3>С тренером</h3>
+                  <span>12 занятий ежемесячно</span>
+                  <div class="card__price">
+                    <p class="card__price-shadow">27900</p>
+                    <p class="card__price-cash">27900 <span>&#8381;</span></p>
+                  </div>
+                  <a href="#">купить абонемент</a>
+                </li>
+                <li class="subscriptions__subitem card" tabindex="0">
+                  <h3>Дневной</h3>
+                  <span>с 8:00 до 17:00</span>
+                  <div class="card__price">
+                    <p class="card__price-shadow">9300</p>
+                    <p class="card__price-cash">9300 <span>&#8381;</span></p>
+                  </div>
+                  <a href="#">купить абонемент</a>
+                </li>
+                <li class="subscriptions__subitem card" tabindex="0">
+                  <h3>Полный день</h3>
+                  <span>с 8:00 до 22:00</span>
+                  <div class="card__price">
+                    <p class="card__price-shadow">15000</p>
+                    <p class="card__price-cash">15000 <span>&#8381;</span></p>
+                  </div>
+                  <a href="#">купить абонемент</a>
+                </li>
+              </ul>
+              <ul class="subscriptions__sublist" data-tab-content="year">
+                <li class="subscriptions__subitem card" tabindex="0">
+                  <h3>С тренером</h3>
+                  <span>12 занятий ежемесячно</span>
+                  <div class="card__price">
+                    <p class="card__price-shadow">48 000</p>
+                    <p class="card__price-cash">48 000 <span>&#8381;</span></p>
+                  </div>
+                  <a href="#">купить абонемент</a>
+                </li>
+                <li class="subscriptions__subitem card" tabindex="0">
+                  <h3>Дневной</h3>
+                  <span>с 8:00 до 17:00</span>
+                  <div class="card__price">
+                    <p class="card__price-shadow">13 200</p>
+                    <p class="card__price-cash">13 200 <span>&#8381;</span></p>
+                  </div>
+                  <a href="#">купить абонемент</a>
+                </li>
+                <li class="subscriptions__subitem card" tabindex="0">
+                  <h3>Полный день</h3>
+                  <span>с 8:00 до 22:00</span>
+                  <div class="card__price">
+                    <p class="card__price-shadow">24 000</p>
+                    <p class="card__price-cash">24 000<span> &#8381;</span></p>
+                  </div>
+                  <a href="#">купить абонемент</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer>
+        <div class="container"></div>
+      </footer>
+    </div>
+
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script src="js/vendor.min.js"></script>
+    <script src="js/main.min.js"></script>
+  </body>
+</html>

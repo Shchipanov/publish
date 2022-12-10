@@ -1,0 +1,25 @@
+.main-header {
+  background: conic-gradient(
+    from 130.31deg at 16.03% 39.06%,
+    #b80027 -46.69deg,
+    #003d85 32.24deg,
+    #b80027 313.31deg,
+    #003d85 392.24deg
+  );
+
+  position: relative;
+  display: flex;
+  justify-content: center;
+  padding-top: 31px;
+  padding-bottom: 52px;
+
+  @include vp-1199 {
+    padding-top: 33px;
+    padding-bottom: 82px;
+  }
+
+  @include vp-767 {
+    padding-top: 15px;
+    padding-bottom: 78px;
+  }
+}

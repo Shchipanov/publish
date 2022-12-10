@@ -1,0 +1,114 @@
+.main-nav {
+  max-width: 1237px;
+  width: 100%;
+}
+
+.main-nav__top {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  @include vp-1199 {
+    padding-bottom: 20px;
+  }
+}
+
+.main-nav__logo {
+  margin: 7px 0 0 0;
+
+  @include vp-1199 {
+    width: 82px;
+    height: 17px;
+    margin-left: 0;
+  }
+
+  @include vp-767 {
+    width: 68px;
+    height: 23px;
+    margin-top: 0;
+  }
+}
+
+.main-nav__logo svg {
+  fill: $color-default-white;
+}
+
+.main-nav__phone a {
+  font-family: $ff-alumnisans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 31px;
+  letter-spacing: 0.03em;
+  color: $color-default-white;
+
+  @include vp-1199 {
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: 0.02em;
+  }
+
+  @include vp-767 {
+    font-size: 20px;
+    line-height: 23px;
+  }
+
+  &:hover {
+    color: $color-sapphire;
+  }
+
+  &:active {
+    color: $color-sapphire;
+  }
+
+  &:focus {
+    color: $color-sapphire;
+    outline: none;
+  }
+}
+
+.main-nav__description {
+  display: flex;
+  width: 100%;
+  gap: 65px;
+
+  @include vp-1199 {
+    //padding-right: 0;
+    gap: 30px;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  @include vp-767 {
+    //padding-top: 0;
+    max-width: 500px;
+  }
+}
+
+.main-nav__image {
+  margin: -17px 199px 0 auto;
+  max-width: 500px;
+  height: auto;
+  flex-shrink: 0;
+
+  @include vp-1199 {
+    margin: 0 0 0 auto;
+    max-width: 324px;
+  }
+
+  @include vp-767 {
+    display: none;
+  }
+}
+
+.main-nav__image img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+
+  @include vp-1199 {
+    aspect-ratio: 324/390;
+    object-fit: cover;
+  }
+}
