@@ -1,5 +1,6 @@
 .card {
   padding: 55px 10px 60px;
+
   display: flex;
   flex-direction: column;
   border: 7px solid transparent;
@@ -26,7 +27,7 @@
 }
 
 .card:hover,
-.card:focus,
+.card:focus-within,
 .card:active {
   border: 7px solid;
   border-image-source: linear-gradient(148.82deg, #d10a42 0.85%, #00359f 100%);
@@ -35,6 +36,7 @@
 
 .card h3 {
   margin: 0 0 11px;
+
   font-family: $ff-robotocondensed;
   font-style: normal;
   font-weight: 700;
@@ -55,6 +57,7 @@
 
 .card span {
   margin: 0 0 67px;
+
   font-family: $ff-robotocondensed;
   font-style: normal;
   font-weight: 400;
@@ -72,11 +75,12 @@
 }
 
 .card__price {
+  margin: 0 0 34px;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 0 0 34px;
 
   @include vp-767 {
     margin: 0 0 29px;
@@ -84,8 +88,9 @@
   }
 }
 
-.card__price-cash {
+.card__price p:last-of-type {
   margin: -28px 0 0 3px;
+
   font-family: $ff-robotocondensed;
   font-style: normal;
   font-weight: 700;
@@ -105,8 +110,9 @@
   }
 }
 
-.card__price-shadow {
+.card__price p:first-of-type {
   margin: 0;
+
   font-family: $ff-robotocondensed;
   font-style: normal;
   font-weight: 700;
@@ -127,12 +133,13 @@
   color: $color-sapphire;
 
   @include vp-767 {
-    font-size: 40px;
+    font-size: 43px;
   }
 }
 
-.card a {
+.card__btn {
   padding: 25px 45px 23px;
+
   font-family: $ff-robotocondensed;
   font-style: normal;
   font-weight: 700;
@@ -141,6 +148,7 @@
   letter-spacing: 0.05em;
   text-transform: uppercase;
   color: $color-sapphire;
+  background: transparent;
   border: 2px solid $color-sapphire;
   text-align: center;
 

@@ -1,0 +1,246 @@
+.stocks__container {
+  padding-top: 149px;
+  padding-bottom: 117px;
+  max-width: 1240px;
+
+  @include vp-1199 {
+    padding-top: 91px;
+    padding-bottom: 91px;
+  }
+
+  @include vp-767 {
+    padding-top: 65px;
+    padding-bottom: 62px;
+  }
+}
+
+.stocks h2 {
+  margin: 0 0 33px;
+
+  font-family: $ff-alumnisans;
+  font-weight: 600;
+  font-size: 54px;
+  line-height: 65px;
+  letter-spacing: 0.03em;
+  text-align: center;
+
+  @include vp-1199 {
+    margin: 0 0 42px -6px;
+
+    font-size: 42px;
+    line-height: 50px;
+  }
+
+  @include vp-767 {
+    margin: 0 0 43px -6px;
+
+    font-size: 32px;
+    line-height: 38px;
+  }
+}
+
+.stocks__list {
+  margin: 0;
+  padding: 0;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  list-style-type: none;
+
+  @include vp-1199 {
+    grid-template-rows: auto minmax(211px, min-content);
+    gap: 30px;
+  }
+
+  @include vp-767 {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.stocks__item {
+  padding: 22px 28px 28px;
+
+  display: flex;
+  flex-direction: column;
+
+  border: 7px solid transparent;
+  border-image: linear-gradient(#d10a42, #00359f);
+  border-image-slice: 1;
+
+  @include vp-767 {
+    padding: 32px 39px 40px;
+
+    align-items: center;
+    text-align: center;
+  }
+}
+
+.stocks__item-first {
+  padding: 0;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-row: 1/3;
+  border: none;
+
+  @include vp-1199 {
+    width: 100%;
+
+    grid-template-columns: 0.7fr 1fr;
+    grid-column: 1/3;
+    grid-row: 1/2;
+  }
+
+  @include vp-767 {
+    padding: 0;
+
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.stocks__item h3 {
+  margin: 0 0 6px;
+
+  font-size: 26px;
+  line-height: 31px;
+  color: $color-resolution-blue;
+}
+
+.stocks__item p {
+  margin: 0;
+
+  font-size: 16px;
+  line-height: 22px;
+  color: $color-resolution-blue;
+
+  @include vp-767 {
+    margin: 0 0 29px;
+  }
+}
+
+.stocks__description {
+  padding: 32px 45px 46px;
+
+  display: flex;
+  flex-direction: column;
+  background-color: $color-of-torch-red;
+
+  @include vp-767 {
+    width: 100%;
+
+    align-items: center;
+    text-align: center;
+  }
+}
+
+.stocks__description h3 {
+  margin: 0 0 22px;
+
+  display: flex;
+  flex-direction: column;
+
+  font-size: 28px;
+  line-height: 44px;
+  color: $color-default-white;
+
+  @include vp-767 {
+    margin: 0 0 16px;
+  }
+}
+
+.stocks__description span {
+  font-size: 70px;
+  line-height: 62px;
+}
+
+.stocks__item-first .stocks__description > p {
+  margin: 0 0 31px;
+
+  font-size: 18px;
+  line-height: 25px;
+  color: $color-default-white;
+}
+
+.stocks__description .stocks__btn {
+  font-size: 14px;
+  line-height: 16px;
+  color: $color-default-white;
+  border-bottom: 1px solid $color-default-white;
+
+  &:hover,
+  &:active,
+  &:focus {
+    color: $color-sapphire;
+    border-bottom: 1px solid $color-sapphire;
+  }
+
+  &:focus {
+    color: $color-sapphire;
+    border: 1px solid $color-sapphire;
+    outline: none;
+  }
+}
+
+.stocks__btn {
+  margin: auto 0 0 0;
+  padding: 0;
+
+  align-self: flex-start;
+
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.05em;
+  color: $color-resolution-blue;
+  text-transform: uppercase;
+  border-bottom: 1px solid $color-resolution-blue;
+  background: transparent;
+
+  &:hover,
+  &:active,
+  &:focus {
+    color: $color-of-torch-red;
+    border-bottom: 1px solid $color-of-torch-red;
+  }
+
+  &:focus {
+    color: $color-of-torch-red;
+    border-bottom: 1px solid #ed0233;
+    outline: none;
+  }
+
+  @include vp-767 {
+    margin: 0 auto;
+  }
+}
+
+.stocks__image-wrapper {
+  display: inline-table;
+  vertical-align: middle;
+
+  @include vp-767 {
+    width: 100%;
+  }
+}
+
+.stocks__image {
+  width: 100%;
+  height: 100%;
+
+  aspect-ratio: 280/462;
+  object-fit: cover;
+  background-color: $color-egyptian-blue;
+  object-position: 35%;
+
+  @include vp-1199 {
+    aspect-ratio: 399/462;
+    object-position: top;
+  }
+
+  @include vp-767 {
+    aspect-ratio: 290/298;
+  }
+}

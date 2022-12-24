@@ -1,0 +1,173 @@
+.main-footer {
+  background-color: $color-black-russian;
+  color: $color-default-white;
+}
+
+.main-footer__container {
+  padding-top: 42px;
+  padding-bottom: 34px;
+
+  display: flex;
+  justify-content: center;
+
+  @include vp-1199 {
+    padding-top: 45px;
+    padding-bottom: 44px;
+  }
+
+  @include vp-767 {
+    padding-top: 43px;
+    padding-bottom: 50px;
+
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+.main-footer__nav {
+  margin: 0 auto 0 63px;
+
+  flex-grow: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  @include vp-1199 {
+    margin: 0 auto 0 0;
+  }
+
+  @include vp-767 {
+    margin: 0 auto 25px 0;
+
+    display: block;
+    column-count: 2;
+    column-gap: 60px;
+  }
+}
+
+.main-footer__logo-wrapper {
+  max-width: 90px;
+  width: 100%;
+
+  display: flex;
+  flex-wrap: wrap;
+
+  @include vp-1199 {
+    margin: 2px 45px 0 0;
+  }
+
+  @include vp-767 {
+    margin: 4px 33px 22px 0;
+  }
+}
+
+.main-footer__logo {
+  margin: 0;
+  padding: 0;
+  max-width: 88px;
+  max-height: 32px;
+
+  @include vp-1199 {
+    max-width: 82px;
+    max-height: 18px;
+  }
+
+  @include vp-767 {
+    max-width: 67px;
+    max-height: 15px;
+  }
+
+  &:hover,
+  &:active,
+  &:focus {
+    opacity: 0.5;
+  }
+
+  &:focus,
+  &:focus-visible {
+    outline: none;
+  }
+}
+
+.main-footer__logo svg {
+  fill: $color-default-white;
+}
+
+.main-footer__nav-list {
+  margin: 0;
+  padding: 0;
+  max-width: 500px;
+
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+
+  list-style-type: none;
+
+  @include vp-1199 {
+    max-width: 100%;
+  }
+
+  @include vp-767 {
+    margin: 0 0 0 -4px;
+
+    display: block;
+  }
+}
+
+.main-footer__nav-item {
+  margin: 0 30px 0 0;
+
+  @include vp-1199 {
+    margin: 0 21px 0 0;
+  }
+
+  @include vp-767 {
+    margin: 0 0 16px 0;
+  }
+
+  &:last-of-type {
+    margin: 0;
+  }
+}
+
+.main-footer__nav-link {
+  padding: 5px 5px;
+
+  color: inherit;
+  font-size: 14px;
+  line-height: 16px;
+
+  @include vp-767 {
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  &:hover,
+  &:active,
+  &:focus {
+    opacity: 0.5;
+  }
+
+  &:focus,
+  &:focus-visible {
+    outline: none;
+  }
+}
+
+.main-footer__social {
+  margin: -2px 63px 0 0;
+
+  flex: 0 0 28%;
+
+  @include vp-1199 {
+    margin: 0 -5px 0 0;
+
+    flex: 0 0 21%;
+  }
+
+  @include vp-767 {
+    flex: auto;
+    width: 100%;
+  }
+}

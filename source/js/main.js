@@ -1,8 +1,13 @@
 import {iosVhFix} from './utils/ios-vh-fix';
-import {initModals} from './modules/modals/init-modals';
 import {initVideo} from './modules/init-video';
-import {initTabs} from './modules/init-tabs';
-
+import {sliderTrainers, sliderReviews, removeNotJs} from './modules/slider';
+import {
+  selectTab,
+  removeNotJsTab,
+  tabsContent,
+  tabsControl
+} from './modules/tabs';
+import {getMask} from './modules/get-mask';
 // ---------------------------------
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -18,9 +23,14 @@ window.addEventListener('DOMContentLoaded', () => {
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
   // в load следует добавить скрипты, не участвующие в работе первого экрана
   window.addEventListener('load', () => {
-    initModals();
     initVideo();
-    initTabs();
+    sliderTrainers();
+    sliderReviews();
+    removeNotJs();
+    selectTab();
+    removeNotJsTab(tabsContent);
+    removeNotJsTab(tabsControl);
+    getMask();
   });
 });
 

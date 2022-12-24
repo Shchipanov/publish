@@ -1,0 +1,157 @@
+.free-class {
+  padding: 57px 100px 70px 103px;
+
+  flex: 0 0 50%;
+
+  background-color: $color-sapphire;
+
+  @include vp-1199 {
+    padding: 61px 100px 42px 132px;
+  }
+
+  @include vp-767 {
+    padding: 64px 15px 70px;
+
+    flex: 0 0 0;
+  }
+}
+
+.free-class h2 {
+  margin: 0 21px 17px 0;
+
+  font-family: $ff-alumnisans;
+  font-weight: 800;
+  font-size: 54px;
+  line-height: 1.56;
+  letter-spacing: 0.03em;
+  color: $color-default-white;
+
+  @include vp-1199 {
+    margin: 0 0 33px;
+
+    font-size: 42px;
+    line-height: 50px;
+    font-weight: 700;
+  }
+
+  @include vp-767 {
+    margin: 0 0 35px;
+
+    font-size: 32px;
+    line-height: 38px;
+    font-weight: 600;
+  }
+}
+
+.free-class__form {
+  width: 100%;
+  max-width: 410px;
+
+  @include vp-1199 {
+    max-width: 88%;
+
+    display: flex;
+    flex-direction: column;
+  }
+
+  @include vp-767 {
+    margin: 0 auto;
+    max-width: 100%;
+  }
+}
+
+.free-class__input-wrapper {
+  margin: 0 0 30px;
+
+  display: flex;
+  justify-content: space-between;
+
+  @include vp-1199 {
+    margin: 0 0 29px;
+  }
+
+  @include vp-767 {
+    margin: 0 0 40px;
+
+    flex-direction: column;
+  }
+}
+
+.free-class__form label {
+  width: 100%;
+}
+
+.free-class__form label:first-of-type {
+  margin: 0 30px 0 0;
+
+  @include vp-1199 {
+    margin: 0 64px 0 0;
+  }
+
+  @include vp-767 {
+    margin: 0 0 32px;
+  }
+}
+
+.free-class__form input {
+  padding: 0 0 6px;
+  width: 100%;
+
+  border: none;
+  border-bottom: 1px solid $color-light-slate-grey;
+  background-color: inherit;
+  color: $color-of-torch-red;
+
+  @include vp-1199 {
+    max-width: 100%;
+  }
+}
+
+.free-class__form input::placeholder {
+  font-family: $ff-robotocondensed;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: $color-default-white;
+}
+
+.free-class__form input:hover,
+.free-class__form input:focus-visible,
+.free-class__form input:active {
+  outline: none;
+
+  &::placeholder {
+    color: $color-of-torch-red;
+  }
+}
+
+.free-class__btn {
+  width: 100%;
+  padding: 15px 20px;
+
+  font-family: $ff-robotocondensed;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+
+  border: 3px solid $color-default-white;
+  background: transparent;
+
+  &:hover,
+  &:active,
+  &:focus {
+    border: 3px solid $color-of-torch-red;
+    color: $color-of-torch-red;
+  }
+
+  &:active {
+    border: 3px solid $color-of-torch-red;
+    color: $color-default-white;
+  }
+
+  &:focus-visible {
+    outline: none;
+  }
+}

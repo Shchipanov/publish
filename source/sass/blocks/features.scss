@@ -1,0 +1,253 @@
+.features {
+  padding-top: 145px;
+  padding-bottom: 33px;
+
+  background-color: $color-ghost-white;
+
+  @include vp-1199 {
+    padding-top: 92px;
+    padding-bottom: 92px;
+  }
+
+  @include vp-767 {
+    padding-top: 64px;
+    padding-bottom: 60px;
+  }
+}
+
+.features__container {
+  @include vp-767 {
+    padding: 0;
+  }
+}
+
+.features__container h2 {
+  margin: 0 0 26px 8px;
+  font-family: $ff-alumnisans;
+
+  font-weight: 600;
+  font-size: 54px;
+  line-height: 65px;
+  letter-spacing: 0.03em;
+  text-align: center;
+
+  @include vp-1199 {
+    margin: 0 23px 0 0;
+
+    font-size: 42px;
+    line-height: 50px;
+  }
+
+  @include vp-767 {
+    margin: 0 18px 0 0;
+
+    font-size: 32px;
+    line-height: 38px;
+  }
+}
+
+.features__list {
+  margin: 0 auto;
+  padding: 0;
+
+  display: grid;
+  grid-template-columns: 1fr 240px 1fr;
+  gap: 51px 60px;
+  max-width: 1040px;
+
+  @include vp-1199 {
+    padding: 27px 0 0 0;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 27px;
+  }
+
+  @include vp-767 {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
+
+.features__item {
+  padding: 0 0 23px;
+
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 30px;
+  grid-column: -2/-1;
+
+  color: $color-sapphire;
+  border-bottom: 2px solid $color-crimson02;
+
+  @include vp-1199 {
+    padding: 0;
+
+    border: none;
+  }
+
+  @include vp-767 {
+    padding: 0 46px;
+    display: block;
+
+    text-align: center;
+  }
+
+  &:nth-child(2n) {
+    grid-column: 1/2;
+    padding-left: 20px;
+
+    @include vp-1199 {
+      padding-left: 0;
+    }
+
+    @include vp-767 {
+      padding: 0 46px;
+    }
+  }
+
+  &:nth-last-child(-n + 2) {
+    padding-bottom: 0;
+
+    border-bottom: 2px solid transparent;
+  }
+}
+
+.features__number {
+  max-width: 108px;
+
+  @include vp-767 {
+    margin: 0 auto;
+  }
+}
+
+.features__number span {
+  display: block;
+
+  font-size: 14px;
+  line-height: 21px;
+  color: $color-persian-blue;
+
+  &:nth-child(3n-2) {
+    font-weight: 700;
+    font-size: 71px;
+    line-height: 107px;
+    color: transparent;
+
+    background-color: $color-persian-blue;
+    background-image: linear-gradient(142.51deg, #d10a42 0%, #0041ca 87.33%);
+    background-clip: text;
+
+    @include vp-1199 {
+      font-size: 58px;
+      line-height: 89px;
+    }
+  }
+}
+
+.features__number span + span {
+  margin: -21px 0 0 0;
+}
+
+.features__content h3 {
+  margin: 22px 0 6px;
+
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 33px;
+
+  @include vp-1199 {
+    margin: 15px 0 2px;
+
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  @include vp-767 {
+    margin: 8px 0 1px;
+  }
+}
+
+.features__content p {
+  margin: 0;
+
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.features__item--center {
+  margin: 28px 0 59px;
+  padding: 36px 20px 56px;
+
+  display: block;
+  grid-column: 2/3;
+  grid-row: 1 / span 2;
+
+  text-align: center;
+  color: $color-default-white;
+  background-color: $color-resolution-blue;
+
+  @include vp-1199 {
+    margin: 17px auto 0;
+    padding: 15px 115px 37px;
+    width: 100%;
+    max-width: 442px;
+
+    grid-column: 1/-1;
+    grid-row: 2/3;
+  }
+
+  @include vp-767 {
+    margin: 25px auto 5px;
+    padding: 20px 55px 43px;
+
+    grid-row: 3/4;
+  }
+}
+
+.features__item--center .features__number {
+  max-width: 100%;
+}
+
+.features__item--center span {
+  font-size: 26px;
+  line-height: 39px;
+  color: $color-default-white;
+
+  @include vp-1199 {
+    font-size: 22px;
+    line-height: 33px;
+  }
+
+  &:nth-child(3n-2) {
+    font-weight: 700;
+    font-size: 74px;
+    line-height: 111px;
+    color: $color-default-white;
+
+    @include vp-1199 {
+      font-size: 74px;
+      line-height: 150%;
+    }
+
+    @include vp-767 {
+      font-size: 74px;
+      line-height: 111px;
+    }
+  }
+}
+
+.features__item--center span + span {
+  margin: -16px 0 32px;
+
+  @include vp-1199 {
+    margin: -21px 0 16px;
+  }
+
+  @include vp-767 {
+    margin: -25px 0 9px;
+  }
+}
+
+.features__item--center p {
+  line-height: 24px;
+}

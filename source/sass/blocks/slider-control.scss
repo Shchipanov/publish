@@ -1,0 +1,126 @@
+.slider-control__button-prev,
+.slider-control__button-next {
+  padding: 0;
+
+  border: none;
+  background-color: transparent;
+
+  @include vp-1199 {
+    width: 50px;
+    height: 50px;
+    margin: 0;
+  }
+
+  @include vp-767 {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.slider-control__button-prev.is-not-js,
+.slider-control__button-next.is-not-js {
+  display: none;
+}
+
+.slider-control__button-prev svg {
+  transform: rotate(180deg);
+}
+
+.slider-control__button-prev svg,
+.slider-control__button-next svg {
+  width: 20px;
+  height: 35px;
+
+  fill: none;
+  stroke: $color-dark-gray;
+
+  @include vp-767 {
+    width: 10px;
+    height: 19px;
+  }
+}
+
+.slider-control__button-prev:hover svg,
+.slider-control__button-next:hover svg {
+  stroke: $color-crimson;
+}
+
+.slider-control__button-prev:active svg,
+.slider-control__button-next:active svg {
+  stroke: $color-sapphire;
+}
+
+.slider-control__button-prev:focus,
+.slider-control__button-next:focus {
+  outline: none;
+}
+
+.slider-control__button-prev:focus svg,
+.slider-control__button-next:focus svg {
+  stroke: $color-crimson;
+}
+
+.slider-control .swiper-button-prev::after,
+.slider-control .swiper-button-next::after {
+  display: none;
+}
+
+.slider-control .swiper-button-prev {
+  left: -22px;
+  top: 55%;
+
+  @include vp-1199 {
+    left: 26px;
+    top: 46%;
+  }
+
+  @include vp-767 {
+    left: 5px;
+    top: 48%;
+  }
+}
+
+.slider-control .swiper-button-next {
+  right: -22px;
+  top: 55%;
+
+  @include vp-1199 {
+    right: 26px;
+    top: 46%;
+  }
+
+  @include vp-767 {
+    right: 5px;
+    top: 48%;
+  }
+}
+
+.slider-control.is-reviews .swiper-button-prev {
+  left: -5px;
+  top: 48.5%;
+
+  @include vp-1199 {
+    left: -17px;
+    top: 43.5%;
+  }
+
+  @include vp-767 {
+    left: -10px;
+    top: 48%;
+  }
+}
+
+.slider-control.is-reviews .swiper-button-next {
+  right: -5px;
+  top: 48.5%;
+
+  @include vp-1199 {
+    right: -17px;
+    top: 43.5%;
+  }
+
+  @include vp-767 {
+    right: -10px;
+    top: 48%;
+  }
+}
