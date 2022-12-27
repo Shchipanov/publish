@@ -1320,6 +1320,7 @@ body {
   padding: 0;
   min-height: 100vh;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 html {
@@ -1819,14 +1820,18 @@ button,
 .gum__container {
   margin: 0 auto;
   padding-top: 120px;
-  padding-bottom: 118px;
+  padding-bottom: 233px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
   max-width: 1237px;
   gap: 3%;
+  position: relative;
 }
 
 .gum__description {
@@ -1880,7 +1885,6 @@ button,
 }
 
 .gum__video {
-  margin: -112px 0 0 77px;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1891,7 +1895,8 @@ button,
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  position: relative;
+  position: absolute;
+  top: 407px;
 }
 
 .gum__video iframe {
@@ -3025,6 +3030,20 @@ button,
   display: -ms-flexbox;
   display: flex;
   width: 100%;
+  background-color: #102654;
+  border-top: 1px solid #74819c;
+  position: relative;
+}
+
+.contacts-form::before {
+  position: absolute;
+  content: "";
+  background-color: #ffffff;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 50%;
+  z-index: 0;
 }
 
 .contacts-form__container {
@@ -3039,7 +3058,6 @@ button,
   -webkit-box-flex: 0;
   -ms-flex: 0 0 50%;
   flex: 0 0 50%;
-  background-color: #102654;
 }
 
 .free-class h2 {
@@ -3194,7 +3212,8 @@ button,
   -webkit-box-flex: 0;
   -ms-flex: 0 0 50%;
   flex: 0 0 50%;
-  border-top: 1px solid #74819c;
+  background-color: #ffffff;
+  z-index: 1;
 }
 
 .contacts__wrapper {
@@ -3256,6 +3275,9 @@ button,
 
 .contacts__item a {
   max-width: 100%;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   display: block;
   font-weight: 400;
   font-size: 14px;
@@ -3618,6 +3640,8 @@ button,
 
   .gum__video {
     margin: -84px 0 0 0;
+    position: relative;
+    top: 0;
   }
 
   .gum__video iframe {
@@ -3978,6 +4002,14 @@ button,
     max-width: 100%;
   }
 
+  .contacts-form {
+    border-top: none;
+  }
+
+  .contacts-form::before {
+    display: none;
+  }
+
   .contacts-form__container {
     padding: 0 0 27px;
     -webkit-box-orient: vertical;
@@ -3988,6 +4020,7 @@ button,
 
   .free-class {
     padding: 61px 100px 42px 132px;
+    background-color: #102654;
   }
 
   .free-class h2 {
@@ -4023,7 +4056,6 @@ button,
   .contacts {
     padding: 62px 15px 65px;
     width: 100%;
-    border-top: none;
   }
 
   .contacts__wrapper {

@@ -519,8 +519,8 @@
                 </li>
               </ul>
             </div>
-            <button class="slider-control__button-next is-not-js swiper-button-next" type="button" data-swiper-button="reviews-next">
-              <svg width="20" height="32" aria-hidden="true" focusable="false" aria-label="Следующий слайд.">
+            <button class="slider-control__button-next is-not-js swiper-button-next" type="button" aria-label="Следующий слайд." data-swiper-button="reviews-next">
+              <svg width="20" height="32" aria-hidden="true" focusable="false" >
                 <use xlink:href="img/sprite.svg#arrow"></use>
               </svg>
             </button>
@@ -538,7 +538,7 @@
                     <input type="text" name="your-name" placeholder="Имя" pattern="^[a-zA-ZA-Яа-яЁё\s\D [^0-9]]+$" id="name" minlength="1" maxlength="30" required>
                   </label>
                   <label for="phone">
-                    <input type="tel" id="phone" name="your-phone" placeholder="Телефон" data-phone minlength="10" pattern="8[0-9]{3}[0-9]{3}[0-9]{2}[0-9]{2}" required>
+                    <input type="tel" id="phone" name="your-phone" placeholder="Телефон" data-phone pattern="\+?[0-9\s\-\(\)]+" required>
                   </label>
                 </div>
                 <button class="free-class__btn btn" type="submit" data-button="submit-button">отправить</button>
