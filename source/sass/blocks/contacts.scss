@@ -3,13 +3,12 @@
 
   flex: 0 0 50%;
 
-  border-top: 1px solid $color-light-slate-grey;
+  background-color: $color-default-white;
+  z-index: 1;
 
   @include vp-1199 {
     padding: 62px 15px 65px;
     width: 100%;
-
-    border-top: none;
   }
 
   @include vp-767 {
@@ -143,6 +142,7 @@
 
 .contacts__item a {
   max-width: 100%;
+  width: fit-content;
 
   display: block;
 

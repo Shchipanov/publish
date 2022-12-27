@@ -3,10 +3,10 @@
 
   flex: 0 0 50%;
 
-  background-color: $color-sapphire;
-
   @include vp-1199 {
     padding: 61px 100px 42px 132px;
+
+    background-color: $color-sapphire;
   }
 
   @include vp-767 {

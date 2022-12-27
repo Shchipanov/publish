@@ -7,7 +7,7 @@ import {
   tabsContent,
   tabsControl
 } from './modules/tabs';
-import {getMask} from './modules/get-mask';
+// import {getMask} from './modules/get-mask';
 // ---------------------------------
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -30,7 +30,7 @@ window.addEventListener('DOMContentLoaded', () => {
     selectTab();
     removeNotJsTab(tabsContent);
     removeNotJsTab(tabsControl);
-    getMask();
+    // getMask();
   });
 });
 

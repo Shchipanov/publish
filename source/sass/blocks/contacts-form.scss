@@ -1,6 +1,30 @@
 .contacts-form {
   display: flex;
   width: 100%;
+
+  background-color: $color-sapphire;
+  border-top: 1px solid $color-light-slate-grey;
+
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    background-color: $color-default-white;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 50%;
+    z-index: 0;
+  }
+
+  @include vp-1199 {
+    border-top: none;
+
+    &::before {
+      display: none;
+    }
+  }
 }
 
 .contacts-form__container {
